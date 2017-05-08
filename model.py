@@ -45,7 +45,7 @@ class Model(db.Model):
     brand_id = db.Column(db.String(5), db.ForeignKey('brands.brand_id'))
     name = db.Column(db.String(50))
 
-    brand_rel = db.relationship('Brand', backref='models')
+    brand_rel = db.relationship('Brand', backref='models_rel')
 
 
     def __repr__(self):
